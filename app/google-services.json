@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "543959998316",
+    "project_id": "culture-mart",
+    "storage_bucket": "culture-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543959998316:android:ad0ccf9d3651cb4b585d49",
+        "android_client_info": {
+          "package_name": "com.udin.culturemart",
+          "certificate_hash": "aece636d2c146d9cab752dbec1ec8d4457a3d1bb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543959998316-tco3ihrqv9m19lpkiceems4fj6u1or59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_cMTDhCBXfu2lpNpbh8AdYym0vOG9jAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543959998316-tco3ihrqv9m19lpkiceems4fj6u1or59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

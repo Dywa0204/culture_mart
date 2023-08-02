@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+    tools:context=".activities.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/home_menu"
+                android:paddingHorizontal="8dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/ic_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/brown_700" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:paddingHorizontal="8dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/ic_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/brown_700" />
+
+            <ImageButton
+                android:paddingHorizontal="8dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/ic_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/brown_700" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:background="@color/brown_200"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_200"
+    tools:context=".activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:layout_marginVertical="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/gunungan1"
+                    android:layout_weight=".40"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar Akun"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="12dp"
+                android:textSize="32dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/register_username_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:placeholderText="Masukkan Username"
+                app:errorEnabled="false"
+                app:placeholderTextColor="#A1FFFFFF"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="@color/white"
+                android:hint="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_username"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/register_password_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:placeholderText="Masukkan Password"
+                app:placeholderTextColor="#A1FFFFFF"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/white"
+                app:endIconDrawable="@drawable/ic_visibility_off"
+                app:endIconTint="@color/white"
+                app:endIconMode="custom"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_password"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/register_fullname_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:placeholderText="Masukkan Nama Lengkap"
+                app:placeholderTextColor="#A1FFFFFF"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:boxStrokeWidth="0dp"
+                app:startIconDrawable="@drawable/ic_perm_identity"
+                app:startIconTint="@color/white"
+                android:hint="Nama Lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_fullname"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="2dp"
+                android:background="@drawable/button_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="@drawable/button_rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Daftar"
+                    android:id="@+id/register_btn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/login_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk Sekarang"
+                    android:textColor="#FFB872"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
